@@ -1,3 +1,4 @@
 public class BaseballPlayer {
-    String[] name;
+    String name;
+    boolean wsWinner = false;
 }
