@@ -1,8 +1,9 @@
 public class WorldSeries {
-  //delcare and initialize instance variables
+  //declare and initialize instance variables
   BaseballPlayer[] dodgers = new BaseballPlayer[9];
   
   public void playSeries() {
+    //Example even though we're making this player in setRoster()
     dodgers[0] = new BaseballPlayer();
     dodgers[0].name = "Pedro Baéz";
     setRoster();
@@ -15,11 +16,12 @@ public class WorldSeries {
 
     // with arrays, you can initialize with this shorthand:
     int[] raysScores = {3, 6, 2, 9, 2, 1};
+
     // setup the dodgers score
 
     // Print out the score for each game using a regular for loop
 
-    //Set the instance variable wsWinner for each dodger player to true
+    //Set the instance variable wsWinner for each dodger player to true using an enhanced for loop
 
     
   }
@@ -29,6 +31,7 @@ public class WorldSeries {
     for (int i = 0; i<dodgers.length; i++) {
       dodgers[i] = new BaseballPlayer();
     }
+    dodgers[0].name = "Pedro Baéz";
     dodgers[1].name = "Walker Buehler";
     dodgers[2].name = "Dylan Floro";
     dodgers[3].name = "Tony Gonsolin";
